@@ -37,44 +37,6 @@
     color:var(--navy);
     letter-spacing:-0.02em;
   }
-.sticky-wa{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  z-index:999;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  background:#25D366;
-  color:#fff;
-  padding:15px 22px;
-  border-radius:50px;
-  text-decoration:none;
-  font-family:'Plus Jakarta Sans';
-  font-weight:800;
-  font-size:14.5px;
-  box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 4px 12px -4px rgba(23,27,58,0.25);
-  transition:transform .2s ease, box-shadow .2s ease;
-  animation:wa-pulse 2.4s ease-in-out infinite;
-}
-.sticky-wa:hover{
-  transform:translateY(-3px);
-  box-shadow:0 16px 36px -8px rgba(37,211,102,0.7), 0 6px 14px -4px rgba(23,27,58,0.3);
-}
-.sticky-wa svg{width:22px;height:22px;flex:none;}
-@keyframes wa-pulse{
-  0%,100%{box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 0 0 0 rgba(37,211,102,0.45);}
-  50%{box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 0 0 10px rgba(37,211,102,0);}
-}
-@media(max-width:520px){
-  .sticky-wa{
-    padding:14px;
-    border-radius:50%;
-    right:16px;
-    bottom:16px;
-  }
-  .sticky-wa-text{display:none;}
-}
   p{margin:0;color:var(--ink-soft);}
   a{text-decoration:none;color:inherit;}
   ul{margin:0;padding:0;list-style:none;}
@@ -512,3 +474,41 @@
     .hero h1{font-size:31px;}
     .req-card{padding:28px 22px;}
   }
+.sticky-wa{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:999;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  font-family:'Plus Jakarta Sans';
+  font-weight:800;
+  font-size:14.5px;
+  box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 4px 12px -4px rgba(23,27,58,0.25);
+  transition:transform .2s ease, box-shadow .2s ease;
+  animation:wa-pulse 2.4s ease-in-out infinite;
+}
+.sticky-wa:hover{
+  transform:translateY(-3px);
+  box-shadow:0 16px 36px -8px rgba(37,211,102,0.7), 0 6px 14px -4px rgba(23,27,58,0.3);
+}
+.sticky-wa svg{width:22px;height:22px;flex:none;}
+@keyframes wa-pulse{
+  0%,100%{box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 0 0 0 rgba(37,211,102,0.45);}
+  50%{box-shadow:0 12px 30px -8px rgba(37,211,102,0.55), 0 0 0 10px rgba(37,211,102,0);}
+}
+@media(max-width:520px){
+  .sticky-wa{
+    padding:14px;
+    border-radius:50%;
+    right:16px;
+    bottom:16px;
+  }
+  .sticky-wa-text{display:none;}
+}
